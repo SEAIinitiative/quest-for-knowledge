@@ -1,0 +1,10 @@
+CharacterBody2D
+Timer
+AnimatedSprite2D
+ProgressBar
+CollisionShape2D
+Area2D
+StaticBody2D
+CollisionPolygon2D
+Camera2D
+TileMap
