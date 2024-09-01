@@ -112,4 +112,3 @@ func _on_regen_timeout():
 			health = 60
 	if health <= 0:
 		health = 0
-

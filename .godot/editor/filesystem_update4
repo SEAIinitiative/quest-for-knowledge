@@ -1,5 +1,6 @@
 res://scenes/maps/world.tscn
 res://scenes/tileset.tres
+res://scripts/enemy/enemy.gd
 res://scenes/maps/sacred_pond.tscn
 res://scenes/player/player.tscn
 res://scenes/enemy/skeleton.tscn
