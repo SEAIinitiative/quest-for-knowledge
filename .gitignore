@@ -1,2 +1,33 @@
-# Godot 4+ specific ignores
-.godot/
+# Godot-specific files
+.export/
+.import/
+
+# Godot editor binary caches
+*.godot/tmp/*
+*.godot/tmp/*/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Compiled files
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+*.obj
+*.o
+*.a
+*.lib
+*.pdb
+
+# Logs and debugging files
+*.log
+*.log.*
+
+# Godot build artifacts
+bin/
+
+# Python virtual environment (if using Python/GDNative)
+venv/

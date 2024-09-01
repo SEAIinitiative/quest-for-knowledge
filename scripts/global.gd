@@ -10,6 +10,7 @@ var player_exit_sacred_pond_posy = 11
 var player_start_posx = 12
 var player_start_posy = 88
 
+var enemy_name = "enemy"
 
 var game_load = true
 
