@@ -4,7 +4,7 @@ extends CharacterBody2D
 var health = 100
 var player_alive = true
 var attack_ip = false # Is player in the middle of an attack?
-const speed = 51 # Movement speed of the player
+const speed = 150 # Movement speed of the player
 var current_dir = "none" # Direction of the player movement
 
 

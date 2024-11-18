@@ -18,6 +18,7 @@ config/icon="res://assets/icon.svg"
 [autoload]
 
 global="*res://scripts/global.gd"
+SceneTransitionManager="*res://scripts/maps/scene_transition_manager.gd"
 
 [input]
 

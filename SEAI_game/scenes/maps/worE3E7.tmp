@@ -26,18 +26,18 @@ layer_2/y_sort_enabled = true
 layer_2/tile_data = PackedInt32Array(262149, 2, 5, 196624, 196610, 9, 589835, 2, 9, 327704, 196610, 5, 262164, 393218, 9, 196610, 393218, 5, 655361, 655362, 5, 524301, 65538, 1, 655363, 65538, 1, 393221, 524290, 1, 131081, 524290, 6, 65544, 524290, 6, 655379, 393218, 7, 655377, 393218, 7, 655368, 655362, 7, 327688, 655362, 7, 393235, 262146, 0, 393236, 262146, 0, 196620, 2, 0, 131085, 327682, 0, 11, 393218, 5, 3, 65538, 1, 131097, 65538, 1, 65559, 393218, 7, 65541, 655362, 7, 19, 393218, 5, 21, 65538, 1, 720911, 589826, 5, 655373, 589826, 5, 65551, 589826, 5)
 
 [node name="player" parent="." instance=ExtResource("3_tnodb")]
-position = Vector2(20, 79)
+position = Vector2(30, 93)
 
 [node name="enemy_slime" parent="." instance=ExtResource("4_6grmr")]
 position = Vector2(257, 109)
 
 [node name="skeleton" parent="." instance=ExtResource("5_ih2v6")]
-position = Vector2(173, 69)
+position = Vector2(166, 72)
 
 [node name="world_barrier" type="StaticBody2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="world_barrier"]
-polygon = PackedVector2Array(0, -1, -19, -1, -19, 173, 1, 192, 375, 193, 380, 203, 435, 204, 434, 194, 434, 136, 417, 135, 417, 2, 436, -9, -21, -10, -20, -1, -39, -1, -38, -24, 450, -23, 450, 210, -59, 194, -39, -3)
+polygon = PackedVector2Array(3, 0, 34, 0, 34, 27, 39, 32, 50, 32, 50, 43, 55, 48, 106, 48, 112, 43, 112, -12, 258, -12, 258, 27, 263, 32, 290, 32, 290, 43, 295, 48, 354, 48, 354, 59, 359, 64, 401, 64, 403, 75, 410, 80, 430, 80, 433, 210, -18, 210, -13, -6, -2, -1, -15, -24, -36, 67, -33, 218, 445, 219, 443, 70, 411, 69, 405, 52, 361, 52, 358, 35, 297, 34, 293, 17, 265, 17, 264, -20, 106, -20, 106, 34, 57, 35, 55, 19, 41, 18, 39, -6)
 
 [node name="sacred_pond_transition" type="Area2D" parent="."]
 
@@ -45,10 +45,4 @@ polygon = PackedVector2Array(0, -1, -19, -1, -19, 173, 1, 192, 375, 193, 380, 20
 position = Vector2(184.5, -6)
 shape = SubResource("RectangleShape2D_mgmhy")
 
-[node name="george_washington_location_transition" type="Area2D" parent="."]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="george_washington_location_transition"]
-polygon = PackedVector2Array(416, 135, 416, 192, 375, 192, 380, 202, 434, 203, 433, 136)
-
 [connection signal="body_entered" from="sacred_pond_transition" to="." method="_on_sacred_pond_transition_body_entered"]
-[connection signal="body_entered" from="george_washington_location_transition" to="." method="_on_george_washington_location_transition_body_entered"]

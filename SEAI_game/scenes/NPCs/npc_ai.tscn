@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://ch1jgsb3evfno"]
+
+[ext_resource type="Script" path="res://scripts/NPCs/npc_ai.gd" id="1_j7llv"]
+[ext_resource type="Texture2D" uid="uid://dd4aqyk81r6n5" path="res://assets/icon.svg" id="2_jls84"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1ovcn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_jls84")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="NpcAi" type="CharacterBody2D"]
+script = ExtResource("1_j7llv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -35)
+sprite_frames = SubResource("SpriteFrames_1ovcn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Interaction_zone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interaction_zone"]
