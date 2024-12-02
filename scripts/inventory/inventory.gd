@@ -5,8 +5,19 @@ var inventory = {}
 
 # Item structure example
 var item_database = {
-	"health_potion": {"name": "Health Potion", "description": "Restores 50 HP", "type": "consumable", "effect": 50},
-	"key_of_knowledge": {"name": "Key of Knowledge", "description": "Unlocks the Library Gate", "type": "key_item"}
+	"health_potion": {
+		"name": "Health Potion",
+		"description": "Restores 50 HP",
+		"type": "consumable",
+		"effect": 50,
+		"icon_path": "res://assets/icons/health_potion.png"
+	},
+	"key_of_knowledge": {
+		"name": "Key of Knowledge",
+		"description": "Unlocks the Library Gate",
+		"type": "key_item",
+		"icon_path": "res://assets/icons/key_of_knowledge.png"
+	}
 }
 
 # Add item to inventory

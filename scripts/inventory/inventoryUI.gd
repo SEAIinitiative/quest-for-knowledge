@@ -12,7 +12,7 @@ func update_inventory():
 	grid.clear()  # Clear existing items
 	for item_id in inventory_script.inventory:
 		var item = inventory_script.item_database[item_id]
-		var icon = preload("res://scenes/inventory/items/base_item.tscn")
+		var icon = load(item["icon_path"])
 		var button = TextureButton.new()
 		button.texture_normal = icon
 		button.connect("pressed", Callable(self, "_on_item_pressed").bind(item_id))

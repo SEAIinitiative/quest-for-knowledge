@@ -112,7 +112,3 @@ func _on_regen_timeout():
 			health = 60
 	if health <= 0:
 		health = 0
-<<<<<<< HEAD
-=======
-
->>>>>>> 1cbb2a05dfb4c470da8a49e311df8f74f3ed275c
