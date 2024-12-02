@@ -418,7 +418,7 @@ radius = 4.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_k27vt"]
 radius = 7.0
-height = 14.0
+height = 22.0
 
 [node name="player" type="CharacterBody2D"]
 y_sort_enabled = true
@@ -438,7 +438,7 @@ shape = SubResource("CircleShape2D_ak47h")
 [node name="player_hitbox" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player_hitbox"]
-position = Vector2(0, -4)
+position = Vector2(0, -7)
 shape = SubResource("CapsuleShape2D_k27vt")
 
 [node name="attack_cooldown" type="Timer" parent="."]

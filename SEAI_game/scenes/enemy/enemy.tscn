@@ -25,7 +25,7 @@ radius = 9.05539
 radius = 81.4985
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mqpvg"]
-radius = 16.1245
+radius = 7.28011
 
 [node name="enemy" type="CharacterBody2D"]
 script = ExtResource("1_51iks")

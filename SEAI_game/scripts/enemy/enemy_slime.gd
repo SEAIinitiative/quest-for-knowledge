@@ -3,7 +3,7 @@ extends "res://scripts/enemy/enemy.gd"  # Path to your base enemy script
 func _ready():
 	# Set unique properties for the Slime
 	enemy_name = "Slime"
-	health = 60
+	health = 100
 	speed = 10
 
 # Custom Slime behavior, if any
